@@ -1,0 +1,48 @@
+$color-primary: var(--color-primary, #786486);
+$color-white: var(--color-white, #fff);
+$color-black: var(--color-black, #000);
+$color-secondary: var(--color-secondary, #000);
+//--color-accent: #fea112;
+//--color-b-aside: #9888a2;
+
+.btn-primary,
+.buttonPrimary {
+  background: $color-primary;
+  color: $color-white;
+  border: none;
+  &:hover {
+    background: $color-secondary;
+    color: $color-white;
+  }
+}
+
+.btnIco {
+  padding: 0px 6px;
+  margin-left: 5px;
+  font-size: 1.3rem;
+  i {
+    color: var(--color-primary);
+  }
+  &:hover {
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    i {
+      color: var(--color-white);
+    }
+  }
+}
+.btnCircle {
+  /* padding: 0px 0px;
+    margin-left: 5px;
+    margin-top: 8px; */
+  font-size: 1.7rem;
+  display: flex;
+  i {
+    color: var(--color-accent);
+  }
+  &:hover {
+    i {
+      color: var(--color-primary);
+    }
+  }
+}
